@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="cont" align="center">
+		<input type="text" id="n1" class="subcont" name="">
+		<input type="text" id="n2" class="subcont" name="">
+
+
+
+	</div>
+
+	<div class="cont" align="center">
+		<h2>Resultados</h2>
+		<input type="text" id="promedio"  class="subcont" name=""><br><br>
+		<button id="boton" onclick="calcularprom()"> Calcular</button>
+		
+	</div>
+
+	<script type="text/javascript">
+		function contenido(id) {
+			return document.getElementById(id)
+		}
+		function calcularprom() {
+			var pn=parseInt(contenido('n1').value);
+			var ps=parseInt(contenido('n2').value);
+			var total=(pn+ps)/2;
+			contenido("promedio").value=total;
+
+			
+
+		}
+	</script>
+
+</body>
+</html>
